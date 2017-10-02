@@ -11,16 +11,11 @@ public class TextToMorse {
     public static String textToMorse(String morse)
     {
         String s = morse;
-
         String message = "";
-
-
-
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         String[] morseAlphabet = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
                 "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-",
                 "...-", ".--", "-..-", "-.--", "--.."};
-
 
         for (char alphabetLetter : s.toCharArray())
         {

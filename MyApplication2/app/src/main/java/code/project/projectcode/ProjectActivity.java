@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
@@ -49,6 +50,9 @@ public class ProjectActivity extends AppCompatActivity {
                         message = TextToMorse.textToMorse(message);
 
                     // now needs to display message
+
+                    TextView converstaion = (TextView)findViewById(R.id.conversation);
+                    converstaion.setText(message);
                 }
 
             }
