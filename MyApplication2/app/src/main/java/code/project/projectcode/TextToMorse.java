@@ -10,7 +10,7 @@ public class TextToMorse {
 
     public static String textToMorse(String morse)
     {
-        String s = morse;
+        String s = morse.toLowerCase();
         String message = "";
         String alphabet = "abcdefghijklmnopqrstuvwxyz";
         String[] morseAlphabet = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",

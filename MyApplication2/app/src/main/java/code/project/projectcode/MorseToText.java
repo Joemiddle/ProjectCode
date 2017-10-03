@@ -29,7 +29,6 @@ public class MorseToText {
             for (int i = 0; i < morseAlphabet.length; i++) {
                 if (morseAlphabet[i].equals(morseAlph))
                     index = i;
-            }
 
             if (index >= 0) // letter found
                 alphabetLetter = alphabet.charAt(index);

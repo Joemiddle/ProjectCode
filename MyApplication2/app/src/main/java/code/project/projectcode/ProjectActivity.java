@@ -2,6 +2,7 @@ package code.project.projectcode;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -37,23 +38,30 @@ public class ProjectActivity extends AppCompatActivity {
         {
             public void onClick(View v)
             {
-                if(morseTtext)
-                {
-                    EditText messageText = (EditText)findViewById(R.id.message);
 
-                    String message = messageText.getText().toString();
 
-                    if(morseTtext)
+                EditText messageText = (EditText)findViewById(R.id.message);
+
+                String message = messageText.getText().toString();
+
+                Log.d("d",message);
+
+                    if(morseTtext) {
                         message = MorseToText.fromMorse(message);
+                        Log.d("d", message);
+                    }
 
                     else
+                    {
+                        Log.d("d", message);
                         message = TextToMorse.textToMorse(message);
+                    }
 
-                    // now needs to display message
 
-                    TextView converstaion = (TextView)findViewById(R.id.conversation);
-                    converstaion.setText(message);
-                }
+                // now needs to display message
+
+                TextView converstaion = (TextView)findViewById(R.id.conversation);
+                converstaion.setText(message);
 
             }
         });
