@@ -53,8 +53,8 @@ public class ProjectActivity extends AppCompatActivity {
 
                     else
                     {
-                        Log.d("d", message);
                         message = TextToMorse.textToMorse(message);
+                        Log.d("d", message);
                     }
 
 

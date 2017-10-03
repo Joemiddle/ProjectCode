@@ -13,17 +13,17 @@ public class MorseToText {
         String message = "";
 
         // sample alphabet string
-        String alphabet = "abcdefghijklmnopqrstuvwxyz";
+        String alphabet = "abcdefghijklmnopqrstuvwxyz .";
         String[] morseAlphabet = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
                 "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-",
-                "...-", ".--", "-..-", "-.--", "--.."};
+                "...-", ".--", "-..-", "-.--", "--..", " ", ".-.-.-"};
 
         // separate on string letters
         String[] letters = s.split(" ");
 
         // iteration morse letters
         for (String morseAlph : letters) {
-            char alphabetLetter = '?';
+            char alphabetLetter = ' ';
 
             int index = -1;
             for (int i = 0; i < morseAlphabet.length; i++) {
