@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\n01121995\\Desktop\\MyProject\\Project_Code\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\n01121995\\.android\\build-cache\\0bea5d91b7903d9ef24c5102d0dc129382aa2966\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\Users\\n01121995\\Desktop\\MyProject\\Project_Code\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\n01121995\\.android\\build-cache\\0bea5d91b7903d9ef24c5102d0dc129382aa2966\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\Users\\n01121995\\Desktop\\MyProject\\Project_Code\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\n01121995\\.android\\build-cache\\0bea5d91b7903d9ef24c5102d0dc129382aa2966\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "C:\\Users\\n01121995\\Desktop\\MyProject\\Project_Code\\MyApplication2\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\n01121995\\.android\\build-cache\\0bea5d91b7903d9ef24c5102d0dc129382aa2966\\output\\res\\layout-v21\\notification_action.xml"
+    }
+]
