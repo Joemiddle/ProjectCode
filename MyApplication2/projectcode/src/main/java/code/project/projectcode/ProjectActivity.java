@@ -1,76 +1,63 @@
 package code.project.projectcode;
-/**
- * Created by Andrew McGuire on 02/10/2017.
- */
+//Created by Andrew McGuire on 02/10/2017.
 
-
-
+import android.content.Context;
+import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
-import android.widget.ToggleButton;
 
 public class ProjectActivity extends AppCompatActivity {
 
-    public boolean morseTtext;
+    FragmentPagerAdapter adapterViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_project);
+        setContentView(R.layout.project_activity);
 
-        Button send = (Button) findViewById(R.id.send);
-        morseTtext = true;
+        // Get the ViewPager and set it's PagerAdapter so that it can display items
+        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager.setAdapter(new SampleFragmentPagerAdapter(getSupportFragmentManager(),
+                ProjectActivity.this));
 
-        final ToggleButton morseToggle = (ToggleButton)findViewById(R.id.morse);
-        morseToggle.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View view){
-               if(morseToggle.isChecked())
-                   morseTtext = false;
-                else
-                    morseTtext = true;
-            }
-        });
+        // Give the TabLayout the ViewPager
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
+        tabLayout.setupWithViewPager(viewPager);
 
-        //Selected the send message
-        send.setOnClickListener(new View.OnClickListener()
-        {
-            public void onClick(View v)
-            {
+    }
 
 
-                EditText messageText = (EditText)findViewById(R.id.message);
+    public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
+        final int PAGE_COUNT = 2;
+        private String tabTitles[] = new String[] { "Text","Morse"};
+        private Context context;
 
-                String message = messageText.getText().toString();
+        public SampleFragmentPagerAdapter(FragmentManager fm, Context context) {
+            super(fm);
+            this.context = context;
+        }
 
-                Log.d("d",message);
+        @Override
+        public int getCount() {
 
-                    if(morseTtext) {
-                        message = MorseToText.fromMorse(message);
-                        Log.d("d", message);
-                    }
+            return PAGE_COUNT;
+        }
+        @Override
+        public CharSequence getPageTitle(int position) {
 
-                    else
-                    {
-                        message = TextToMorse.textToMorse(message);
-                        Log.d("d", message);
-                    }
+           if(position == 0)
+               return "Morse";
+            else return "Text";
+        }
+        @Override
+        public Fragment getItem(int position) {
 
-
-                // now needs to display message
-
-                TextView converstaion = (TextView)findViewById(R.id.conversation);
-                converstaion.setText(message);
-
-            }
-        });
-
+            return FragmentHandler.create(position +1 );
+        }
 
 
     }
