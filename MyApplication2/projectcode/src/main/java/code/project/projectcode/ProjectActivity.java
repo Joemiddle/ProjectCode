@@ -12,12 +12,15 @@ import android.os.Bundle;
 
 public class ProjectActivity extends AppCompatActivity {
 
+    private static Context context;
     FragmentPagerAdapter adapterViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.project_activity);
+
+        ProjectActivity.context = getApplicationContext();
 
         // Get the ViewPager and set it's PagerAdapter so that it can display items
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
@@ -28,8 +31,14 @@ public class ProjectActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
+
+
     }
 
+    public static Context getAppContext()
+    {
+        return ProjectActivity.context;
+    }
 
     public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
         final int PAGE_COUNT = 2;
@@ -58,6 +67,7 @@ public class ProjectActivity extends AppCompatActivity {
 
             return FragmentHandler.create(position +1 );
         }
+
 
 
     }

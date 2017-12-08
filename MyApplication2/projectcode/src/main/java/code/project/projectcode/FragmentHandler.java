@@ -110,6 +110,10 @@ public class FragmentHandler extends Fragment {
                     // now needs to display message
                     conversation.setText(message);
 
+                    MorseToSound sound = new MorseToSound();
+                    sound.morseToSound(message);
+
+
                 }
             });
 
@@ -144,6 +148,11 @@ public class FragmentHandler extends Fragment {
 
                     TextView converstaion = (TextView)view.findViewById(R.id.conversation);
                     converstaion.setText(message);
+
+
+
+                    MorseToSound sound = new MorseToSound();
+                    sound.morseToSound(message);
 
                 }
             });
