@@ -21,6 +21,7 @@ public class MorseToSound {
     ArrayList<Integer> playlist = new ArrayList<Integer>();
 
 
+    // Not used anymore was going to be the method of how to make it a playlist. 
     public void setNextMediaForMediaPlayer(MediaPlayer player, final int audio){
         player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             public void onCompletion(MediaPlayer mp) {
