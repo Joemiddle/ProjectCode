@@ -56,6 +56,36 @@ public class MorseToSound {
 
     }
 
+    void codeToSound(String Morse)
+    {
+        if (Morse.charAt(0) == '-')
+        {
+            player = MediaPlayer.create(ProjectActivity.getAppContext(),soundID[1]);
+
+            // releases the mediaplyer back to memory on soudn completion
+            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener(){
+                public void onCompletion(MediaPlayer mp){
+                    mp.release();
+                }
+            });
+            player.start();
+        }
+        else if (Morse.charAt(0) == '.')
+        {
+            player = MediaPlayer.create(ProjectActivity.getAppContext(),soundID[0]);
+            // releases the mediaplyer back to memory on soudn completion
+            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener(){
+                public void onCompletion(MediaPlayer mp){
+                    mp.release();
+                }
+            });
+            player.start();
+
+        }
+    }
+
+
+
      void morseToSound(String morse)  {
 
          // separate on string letters
