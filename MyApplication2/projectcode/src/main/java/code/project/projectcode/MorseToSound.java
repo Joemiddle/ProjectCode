@@ -37,11 +37,16 @@ public class MorseToSound {
         player.setOnCompletionListener(new MediaPlayer.OnCompletionListener(){
        public void onCompletion(MediaPlayer mp){
 
+           try {
+               wait(1);
+           } catch (Exception e) {
+               e.printStackTrace();
+           }
            if(soundlist.size() > index+1) {
                play(soundlist, mp, index + 1);
            }
-           mp.release();
 
+           mp.release();
         }
     });
 

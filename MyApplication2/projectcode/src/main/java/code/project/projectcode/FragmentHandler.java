@@ -110,8 +110,8 @@ public class FragmentHandler extends Fragment {
                     // now needs to display message
                     conversation.setText(message);
 
-                    MorseToSound sound = new MorseToSound();
-                    sound.morseToSound(message);
+//                    MorseToSound sound = new MorseToSound();
+//                    sound.morseToSound(message);
 
 
                 }
