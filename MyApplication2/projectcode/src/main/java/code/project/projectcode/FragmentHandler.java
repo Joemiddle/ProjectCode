@@ -64,6 +64,9 @@ public class FragmentHandler extends Fragment {
                     String msg = message.getText().toString();
                     msg = msg + ".";
                     message.setText(msg);
+
+                   MorseToSound sound = new MorseToSound();
+                    sound.codeToSound(".");
                 }
             });
 
@@ -76,6 +79,8 @@ public class FragmentHandler extends Fragment {
                     String msg = message.getText().toString();
                     msg = msg + "-";
                     message.setText(msg);
+                    MorseToSound sound = new MorseToSound();
+                    sound.codeToSound("-");
                 }
             });
 
@@ -109,6 +114,9 @@ public class FragmentHandler extends Fragment {
 
                     // now needs to display message
                     conversation.setText(message);
+
+//
+
 
                 }
             });
@@ -144,6 +152,11 @@ public class FragmentHandler extends Fragment {
 
                     TextView converstaion = (TextView)view.findViewById(R.id.conversation);
                     converstaion.setText(message);
+
+
+
+                    MorseToSound sound = new MorseToSound();
+                    sound.morseToSound(message);
 
                 }
             });
