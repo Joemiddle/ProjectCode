@@ -40,9 +40,11 @@ public class MorseToSound {
            if(soundlist.size() > index+1) {
                play(soundlist, mp, index + 1);
            }
+           mp.release();
 
         }
     });
+
 
 
 
@@ -73,6 +75,7 @@ public class MorseToSound {
 
            }
            play(playlist,player,0);
+
 
     }
 
