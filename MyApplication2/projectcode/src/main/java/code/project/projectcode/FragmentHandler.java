@@ -15,7 +15,10 @@ import org.w3c.dom.Text;
 
 
 public class FragmentHandler extends Fragment {
+
+
     public static final String ARG_PAGE = "ARG_PAGE";
+    public static final UserPreferences prefs = new UserPreferences();
 
     private int mPage;
 
@@ -65,8 +68,11 @@ public class FragmentHandler extends Fragment {
                     msg = msg + ".";
                     message.setText(msg);
 
-                   MorseToSound sound = new MorseToSound();
-                    sound.codeToSound(".");
+                    if(prefs.checkSound())
+                    {
+                        MorseToSound sound = new MorseToSound();
+                        sound.codeToSound(".");
+                    }
                 }
             });
 
@@ -79,8 +85,11 @@ public class FragmentHandler extends Fragment {
                     String msg = message.getText().toString();
                     msg = msg + "-";
                     message.setText(msg);
-                    MorseToSound sound = new MorseToSound();
-                    sound.codeToSound("-");
+
+                    if (prefs.checkSound()) {
+                        MorseToSound sound = new MorseToSound();
+                        sound.codeToSound("-");
+                    }
                 }
             });
 
@@ -155,8 +164,11 @@ public class FragmentHandler extends Fragment {
 
 
 
-                    MorseToSound sound = new MorseToSound();
-                    sound.morseToSound(message);
+                    if(prefs.checkSound())
+                    {
+                        MorseToSound sound = new MorseToSound();
+                        sound.morseToSound(message);
+                    }
 
                 }
             });

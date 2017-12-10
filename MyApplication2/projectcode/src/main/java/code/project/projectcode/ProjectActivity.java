@@ -2,13 +2,17 @@ package code.project.projectcode;
 //Created by Andrew McGuire on 02/10/2017.
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 public class ProjectActivity extends AppCompatActivity {
 
@@ -33,6 +37,29 @@ public class ProjectActivity extends AppCompatActivity {
 
 
 
+    }
+
+    // Populating Menu
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+
+        Intent myIntent;
+        switch(item.getItemId())
+        {
+//            case R.id.Home:
+//                myIntent = new Intent(AndrewActivity.this,AndrewActivity.class);
+//                myIntent.putExtra("activity","not order");
+//                startActivity(myIntent);
+//                break;
+
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     public static Context getAppContext()
