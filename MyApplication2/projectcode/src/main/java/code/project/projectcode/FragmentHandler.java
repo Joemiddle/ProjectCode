@@ -1,10 +1,12 @@
 package code.project.projectcode;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -34,6 +36,42 @@ public class FragmentHandler extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPage = getArguments().getInt(ARG_PAGE);
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+
+        Intent myIntent;
+        switch(item.getItemId())
+        {
+//            case R.id.Home:
+//                myIntent = new Intent(AndrewActivity.this,AndrewActivity.class);
+//                myIntent.putExtra("activity","not order");
+//                startActivity(myIntent);
+//                break;
+            case R.id.Sound:
+                if(prefs.checkSound())
+                {
+                    prefs.setSound(false);
+                }
+                else{
+                    prefs.setSound(true);
+                }
+                    break;
+
+            case R.id.Language:
+                if(prefs.checkFrench())
+                {
+                    prefs.setFrench(false);
+                }
+                else {
+                    prefs.setFrench(true);
+                }
+
+                    break;
+
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

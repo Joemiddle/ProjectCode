@@ -28,7 +28,7 @@ public class UserPreferences {
         SharedPreferences prefs  = PreferenceManager.getDefaultSharedPreferences(ProjectActivity.getAppContext());
         SharedPreferences.Editor edit = prefs.edit();
         edit.putBoolean("French",fre);
-        edit.commit();
+        edit.apply();
         this.french = fre;
     }
 
@@ -37,7 +37,7 @@ public class UserPreferences {
         SharedPreferences prefs  = PreferenceManager.getDefaultSharedPreferences(ProjectActivity.getAppContext());
         SharedPreferences.Editor edit = prefs.edit();
         edit.putBoolean("Sound",vol);
-        edit.commit();
+        edit.apply();
         this.sound = vol;
     }
 

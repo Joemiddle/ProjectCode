@@ -46,21 +46,7 @@ public class ProjectActivity extends AppCompatActivity {
         return true;
     }
 
-    public boolean onOptionsItemSelected(MenuItem item){
 
-        Intent myIntent;
-        switch(item.getItemId())
-        {
-//            case R.id.Home:
-//                myIntent = new Intent(AndrewActivity.this,AndrewActivity.class);
-//                myIntent.putExtra("activity","not order");
-//                startActivity(myIntent);
-//                break;
-
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 
     public static Context getAppContext()
     {
