@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -52,10 +53,13 @@ public class FragmentHandler extends Fragment {
                 if(prefs.checkSound())
                 {
                     prefs.setSound(false);
+                    Toast.makeText(ProjectActivity.getAppContext(), "Sound False", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     prefs.setSound(true);
+                    Toast.makeText(ProjectActivity.getAppContext(), "Sound True", Toast.LENGTH_SHORT).show();
                 }
+
                     break;
 
             case R.id.Language:

@@ -13,6 +13,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import static code.project.projectcode.FragmentHandler.ARG_PAGE;
 
 public class ProjectActivity extends AppCompatActivity {
 
@@ -45,6 +48,7 @@ public class ProjectActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu,menu);
         return true;
     }
+
 
 
 
