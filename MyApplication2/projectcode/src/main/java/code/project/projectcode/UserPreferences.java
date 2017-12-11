@@ -13,14 +13,14 @@ public class UserPreferences {
     private boolean french;
     private boolean sound;
 
-     private UserPreferences()
+     public UserPreferences()
     {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ProjectActivity.getAppContext());
         french = prefs.getBoolean("French",false);
         sound = prefs.getBoolean("Sound",true);
     }
 
-    private void setFrench(boolean fre)
+    public void setFrench(boolean fre)
     {
         SharedPreferences prefs  = PreferenceManager.getDefaultSharedPreferences(ProjectActivity.getAppContext());
         SharedPreferences.Editor edit = prefs.edit();
@@ -29,7 +29,7 @@ public class UserPreferences {
         this.french = fre;
     }
 
-    private void setSound(boolean vol)
+    public void setSound(boolean vol)
     {
         SharedPreferences prefs  = PreferenceManager.getDefaultSharedPreferences(ProjectActivity.getAppContext());
         SharedPreferences.Editor edit = prefs.edit();
@@ -38,11 +38,11 @@ public class UserPreferences {
         this.sound = vol;
     }
 
-    private boolean checkSound()
+    public boolean checkSound()
     {
         return sound;
     }
-    private boolean checkFrench()
+    public boolean checkFrench()
     {
         return french;
     }

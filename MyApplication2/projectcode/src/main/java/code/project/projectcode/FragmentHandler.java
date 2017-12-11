@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,11 +39,11 @@ public class FragmentHandler extends Fragment {
         mPage = getArguments().getInt(ARG_PAGE);
     }
 
-    public boolean onOptionsItemSelected(MenuItem item){
 
-        Intent myIntent;
+
+    public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId())
-        {
+            {
             case R.id.Sound:
                 if(prefs.checkSound())
                 {
@@ -184,4 +185,6 @@ public class FragmentHandler extends Fragment {
         }
         return view;
     }
+
+
 }
