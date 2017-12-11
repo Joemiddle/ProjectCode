@@ -1,5 +1,6 @@
 package code.project.projectcode;
 
+// Created by Andrew McGuire
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,10 +20,8 @@ import org.w3c.dom.Text;
 
 public class FragmentHandler extends Fragment {
 
-
     public static final String ARG_PAGE = "ARG_PAGE";
     public static final UserPreferences prefs = new UserPreferences();
-
     private int mPage;
 
     public static FragmentHandler create(int page) {
@@ -44,11 +43,6 @@ public class FragmentHandler extends Fragment {
         Intent myIntent;
         switch(item.getItemId())
         {
-//            case R.id.Home:
-//                myIntent = new Intent(AndrewActivity.this,AndrewActivity.class);
-//                myIntent.putExtra("activity","not order");
-//                startActivity(myIntent);
-//                break;
             case R.id.Sound:
                 if(prefs.checkSound())
                 {
@@ -59,7 +53,6 @@ public class FragmentHandler extends Fragment {
                     prefs.setSound(true);
                     Toast.makeText(ProjectActivity.getAppContext(), "Sound True", Toast.LENGTH_SHORT).show();
                 }
-
                     break;
 
             case R.id.Language:
@@ -70,11 +63,8 @@ public class FragmentHandler extends Fragment {
                 else {
                     prefs.setFrench(true);
                 }
-
                     break;
-
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -85,7 +75,6 @@ public class FragmentHandler extends Fragment {
 
         if(mPage == 1) {
             view = inflater.inflate(R.layout.fragment_morse, container, false);
-
             Button send = (Button) view.findViewById(R.id.send);
             Button dot = (Button) view.findViewById(R.id.dot);
             Button dash = (Button) view.findViewById(R.id.dash);
@@ -117,7 +106,6 @@ public class FragmentHandler extends Fragment {
                     }
                 }
             });
-
 
             dash.setOnClickListener(new View.OnClickListener()
             {
@@ -151,24 +139,14 @@ public class FragmentHandler extends Fragment {
             {
                 public void onClick(View v)
                 {
-
-
                     TextView messageText = ( TextView)view.findViewById(R.id.message);
                     TextView conversation = (TextView) view.findViewById(R.id.translation);
                     String message = messageText.getText().toString();
-
-
                     message = MorseToText.fromMorse(message);
                     Log.d("d", message);
 
-
-
                     // now needs to display message
                     conversation.setText(message);
-
-//
-
-
                 }
             });
 
@@ -176,11 +154,7 @@ public class FragmentHandler extends Fragment {
 
         else if (mPage == 2)  {
             view = inflater.inflate(R.layout.fragment_text, container, false);
-
-
             Button send = (Button) view.findViewById(R.id.send);
-
-
 
             //Selected the send message
             send.setOnClickListener(new View.OnClickListener()
@@ -188,43 +162,26 @@ public class FragmentHandler extends Fragment {
                 public void onClick(View v)
                 {
 
-
                     EditText messageText = (EditText)view.findViewById(R.id.message);
 
                     String message = messageText.getText().toString();
-
-
                         message = TextToMorse.textToMorse(message);
-
-
-
-
                     // now needs to display message
-
                     TextView converstaion = (TextView)view.findViewById(R.id.conversation);
                     converstaion.setText(message);
-
-
 
                     if(prefs.checkSound())
                     {
                         MorseToSound sound = new MorseToSound();
                         sound.morseToSound(message);
                     }
-
                 }
             });
-
 
         }
         else {
             view = inflater.inflate(R.layout.fragment_text,container,false);
         }
-
-
         return view;
     }
-
-
-
 }

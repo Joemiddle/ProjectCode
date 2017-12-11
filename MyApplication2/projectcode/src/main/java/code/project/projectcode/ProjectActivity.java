@@ -38,8 +38,6 @@ public class ProjectActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-
-
     }
 
     // Populating Menu
@@ -49,9 +47,7 @@ public class ProjectActivity extends AppCompatActivity {
         return true;
     }
 
-
-
-
+    // Returning the Context so that it is accessed by other classes
     public static Context getAppContext()
     {
         return ProjectActivity.context;
@@ -59,7 +55,6 @@ public class ProjectActivity extends AppCompatActivity {
 
     public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
         final int PAGE_COUNT = 2;
-        private String tabTitles[] = new String[] { "Text","Morse"};
         private Context context;
 
         public SampleFragmentPagerAdapter(FragmentManager fm, Context context) {
@@ -69,7 +64,6 @@ public class ProjectActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-
             return PAGE_COUNT;
         }
         @Override
