@@ -15,4 +15,13 @@ xmlns:tools="http://schemas.android.com/tools" tools:context=".ProjectActivity">
     android:title="@string/language"
     app:showAsAction="never"
     android:orderInCategory="1" />
+
+    <item
+        style="@style/AppTheme"
+        android:id="@+id/Tutorial"
+        android:title="@string/tutorial"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="1"/>
+
+
 </menu>

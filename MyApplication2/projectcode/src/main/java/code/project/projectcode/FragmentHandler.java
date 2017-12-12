@@ -166,15 +166,16 @@ public class FragmentHandler extends Fragment {
                     EditText messageText = (EditText)view.findViewById(R.id.message);
 
                     String message = messageText.getText().toString();
+                    if(!message.isEmpty()) {
                         message = TextToMorse.textToMorse(message);
-                    // now needs to display message
-                    TextView converstaion = (TextView)view.findViewById(R.id.conversation);
-                    converstaion.setText(message);
+                        // now needs to display message
+                        TextView converstaion = (TextView) view.findViewById(R.id.conversation);
+                        converstaion.setText(message);
 
-                    if(prefs.checkSound())
-                    {
-                        MorseToSound sound = new MorseToSound();
-                        sound.morseToSound(message);
+                        if (prefs.checkSound()) {
+                            MorseToSound sound = new MorseToSound();
+                            sound.morseToSound(message);
+                        }
                     }
                 }
             });
