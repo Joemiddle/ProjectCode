@@ -24,12 +24,10 @@ public class MorseToText {
         // iteration morse letters
         for (String morseAlph : letters) {
             char alphabetLetter = ' ';
-
             int index = -1;
             for (int i = 0; i < morseAlphabet.length; i++) {
                 if (morseAlphabet[i].equals(morseAlph))
                     index = i;
-
             }
 
             if (index >= 0) // letter found
