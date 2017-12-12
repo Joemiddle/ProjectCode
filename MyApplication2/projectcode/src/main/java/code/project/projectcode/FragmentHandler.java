@@ -1,7 +1,10 @@
 package code.project.projectcode;
 
-// Created by Andrew McGuire
-
+/*
+Createed By Andrew McGuire
+TEAM PANADA
+PROJECT CODE
+ */
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;

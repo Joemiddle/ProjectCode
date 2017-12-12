@@ -4,8 +4,10 @@ import android.content.SharedPreferences;
 import android.preference.Preference;
 import android.preference.PreferenceManager;
 
-/**
- * Created by Andrew on 10/12/2017.
+/*
+Createed By Andrew McGuire
+TEAM PANADA
+PROJECT CODE
  */
 
 public class UserPreferences {

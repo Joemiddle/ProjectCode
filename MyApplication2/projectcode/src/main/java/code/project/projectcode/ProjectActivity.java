@@ -1,6 +1,9 @@
 package code.project.projectcode;
-//Created by Andrew McGuire on 02/10/2017.
-
+/*
+Createed By Andrew McGuire
+TEAM PANADA
+PROJECT CODE
+ */
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;

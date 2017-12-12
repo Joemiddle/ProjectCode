@@ -1,6 +1,10 @@
 package code.project.projectcode;
 
-
+/*
+Createed By Andrew McGuire
+TEAM PANADA
+PROJECT CODE
+ */
 import android.media.MediaPlayer;
 import android.provider.MediaStore;
 import android.util.Log;

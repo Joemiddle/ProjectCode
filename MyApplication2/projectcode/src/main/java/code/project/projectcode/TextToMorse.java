@@ -1,8 +1,9 @@
 package code.project.projectcode;
 
-/**
- * Created by Andrew McGuire on 02/10/2017.
-
+/*
+Createed By Andrew McGuire
+TEAM PANADA
+PROJECT CODE
  */
 
 public class TextToMorse {
