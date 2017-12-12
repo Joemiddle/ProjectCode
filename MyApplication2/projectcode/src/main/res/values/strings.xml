@@ -3,4 +3,6 @@
     <string name="space">SPACE</string>
     <string name="clear">clear</string>
     <string name="send">SEND</string>
+    <string name="language">Francais</string>
+    <string name="sound">Sound</string>
 </resources>

@@ -2,13 +2,20 @@ package code.project.projectcode;
 //Created by Andrew McGuire on 02/10/2017.
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.MenuItemCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import static code.project.projectcode.FragmentHandler.ARG_PAGE;
 
 public class ProjectActivity extends AppCompatActivity {
 
@@ -31,10 +38,16 @@ public class ProjectActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-
-
     }
 
+    // Populating Menu
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.menu,menu);
+        return true;
+    }
+
+    // Returning the Context so that it is accessed by other classes
     public static Context getAppContext()
     {
         return ProjectActivity.context;
@@ -42,7 +55,6 @@ public class ProjectActivity extends AppCompatActivity {
 
     public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
         final int PAGE_COUNT = 2;
-        private String tabTitles[] = new String[] { "Text","Morse"};
         private Context context;
 
         public SampleFragmentPagerAdapter(FragmentManager fm, Context context) {
@@ -52,7 +64,6 @@ public class ProjectActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-
             return PAGE_COUNT;
         }
         @Override
