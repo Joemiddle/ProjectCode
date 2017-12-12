@@ -16,7 +16,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/ans1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -25,28 +25,37 @@
         android:text="Button" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/ans2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="49dp"
-        android:text="Button" />
+        android:layout_marginTop="46dp"
+        android:text="Button"
+        android:layout_alignTop="@+id/ans1"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/ans3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:text="Button" />
+        android:text="Button"
+        android:layout_below="@+id/ans2"
+        android:layout_alignParentStart="true" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/ans4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button3"
+        android:text="Button"
+        android:layout_below="@+id/ans3"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/quiz1"
         android:layout_centerHorizontal="true"
-        android:text="Button" />
+        android:layout_marginTop="84dp"
+        android:textSize="18sp" />
 
 </RelativeLayout>
