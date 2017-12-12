@@ -5,4 +5,5 @@
     <string name="send">envoyer</string>
     <string name="language">English</string>
     <string name="sound">Du son</string>
+    <string name="tutorial">Didacticiel</string>
 </resources>
