@@ -6,4 +6,10 @@
     <string name="language">Francais</string>
     <string name="sound">Sound</string>
     <string name="tutorial">Tutorial</string>
+    <string name="red">Red</string>
+    <string name="white">White</string>
+    <string name="green">Green</string>
+    <string name="blue">Blue</string>
+    <string name="about">About</string>
+    <string name="backcolor">Background Color</string>
 </resources>

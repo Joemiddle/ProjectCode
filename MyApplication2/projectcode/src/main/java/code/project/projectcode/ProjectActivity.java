@@ -51,6 +51,19 @@ public class ProjectActivity extends AppCompatActivity {
         return true;
     }
 
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch(item.getItemId())
+        {
+            case R.id.About:
+
+
+                Toast.makeText(ProjectActivity.getAppContext(), "Created by Team Panda 2017-2018", Toast.LENGTH_SHORT).show();
+                break;
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     // Returning the Context so that it is accessed by other classes
     public static Context getAppContext()
     {
@@ -58,7 +71,7 @@ public class ProjectActivity extends AppCompatActivity {
     }
 
     public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
-        final int PAGE_COUNT = 2;
+        final int PAGE_COUNT = 3;
         private Context context;
 
         public SampleFragmentPagerAdapter(FragmentManager fm, Context context) {
@@ -75,6 +88,8 @@ public class ProjectActivity extends AppCompatActivity {
 
            if(position == 0)
                return "Morse";
+           else if(position == 2)
+               return "Settings";
             else return "Text";
         }
         @Override

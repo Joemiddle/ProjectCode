@@ -16,6 +16,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -42,35 +44,6 @@ public class FragmentHandler extends Fragment {
         mPage = getArguments().getInt(ARG_PAGE);
     }
 
-
-
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch(item.getItemId())
-            {
-            case R.id.Sound:
-                if(prefs.checkSound())
-                {
-                    prefs.setSound(false);
-                    Toast.makeText(ProjectActivity.getAppContext(), "Sound False", Toast.LENGTH_SHORT).show();
-                }
-                else{
-                    prefs.setSound(true);
-                    Toast.makeText(ProjectActivity.getAppContext(), "Sound True", Toast.LENGTH_SHORT).show();
-                }
-                    break;
-
-            case R.id.Language:
-                if(prefs.checkFrench())
-                {
-                    prefs.setFrench(false);
-                }
-                else {
-                    prefs.setFrench(true);
-                }
-                    break;
-        }
-        return super.onOptionsItemSelected(item);
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -184,7 +157,19 @@ public class FragmentHandler extends Fragment {
             });
 
         }
+
+        else if(mPage == 3)
+        {
+            view = inflater.inflate(R.layout.settings,container,false);
+
+            RadioGroup radgroup = (RadioGroup) view.findViewById(R.id.radgroup);
+
+            
+
+        }
+
         else {
+
             view = inflater.inflate(R.layout.fragment_text,container,false);
         }
         return view;
