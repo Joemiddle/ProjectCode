@@ -196,6 +196,9 @@ public class FragmentHandler extends Fragment {
 
             ToggleButton tog = (ToggleButton) view.findViewById(R.id.soundtog);
 
+            tog.setChecked(prefs.checkSound());
+
+
             tog.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     if (isChecked) {
