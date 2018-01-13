@@ -25,6 +25,7 @@ public class ProjectActivity extends AppCompatActivity {
     private static Context context;
     FragmentPagerAdapter adapterViewPager;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

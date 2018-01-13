@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AndrewAssign11</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="yesorno">Click Yes to Exit</string>
+    <string name="exittitle">Exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="name">Andrew Joseph McGuire</string>
+    <string name="studentID">N01121995</string>
+    <string name="dateerror">Can\'t display date</string>
+    <string name="home">Home</string>
+    <string name="andrew">Andrew</string>
+    <string name="mcguire">McGuire</string>
+    <string name="settings">Settings</string>
+    <string name="download">download</string>
+    <string name="titlespin">Courses</string>
+    <string name="andrew_id">Andrew N01121995</string>
+    <string name="download_not_completed">Down Load not Complete</string>
+    <string name="downloadcomplete">Download complete</string>
+    <string name="lastname_id">McGuire n01121995</string>
+    <string name="webservice">Web Services</string>
+    <string name="noinfo">Can\'t get info</string>
+    <string name="blue">blue</string>
+    <string name="yellow">yellow</string>
+    <string name="orange">orange</string>
+    <string name="audio">audio</string>
+    <string name="finish">Finished!</string>
+</resources>

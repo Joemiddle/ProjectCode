@@ -8,8 +8,6 @@ PROJECT CODE
 
 public class TextToMorse {
 
-
-
     public static String textToMorse(String morse)
     {
         String s = morse.toLowerCase();
@@ -36,7 +34,6 @@ public class TextToMorse {
             }
             message += letter + " ";
         }
-        System.out.printf("Message: %s\n", message);
 
         return message;
     }
