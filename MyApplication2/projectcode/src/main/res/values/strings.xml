@@ -12,4 +12,5 @@
     <string name="blue">Blue</string>
     <string name="about">About</string>
     <string name="backcolor">Background Color</string>
+    <string name="soundtog">Sound</string>
 </resources>

@@ -7,7 +7,9 @@ PROJECT CODE
  */
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -15,11 +17,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import org.w3c.dom.Text;
 
@@ -42,13 +47,37 @@ public class FragmentHandler extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPage = getArguments().getInt(ARG_PAGE);
+
+
+
     }
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container,
                              Bundle savedInstanceState) {
         final View view;
+
+        final ViewPager viewpage = (ViewPager) getActivity().findViewById(R.id.viewpager);
+
+        if(prefs.checkColor().equals("red"))
+        {
+            viewpage.setBackgroundColor(getResources().getColor(R.color.red));
+        }
+        if(prefs.checkColor().equals("blue"))
+        {
+            viewpage.setBackgroundColor(getResources().getColor(R.color.blue));
+        }
+        if(prefs.checkColor().equals("white"))
+        {
+            viewpage.setBackgroundColor(getResources().getColor(R.color.white));
+        }
+        if(prefs.checkColor().equals("green"))
+        {
+            viewpage.setBackgroundColor(getResources().getColor(R.color.green));
+        }
+
+
 
         if(mPage == 1) {
             view = inflater.inflate(R.layout.fragment_morse, container, false);
@@ -64,6 +93,7 @@ public class FragmentHandler extends Fragment {
                 {
                     TextView message = (TextView) view.findViewById(R.id.message);
                     message.setText("");
+
                 }
             });
 
@@ -160,11 +190,65 @@ public class FragmentHandler extends Fragment {
 
         else if(mPage == 3)
         {
-            view = inflater.inflate(R.layout.settings,container,false);
 
+            view = inflater.inflate(R.layout.settings,container,false);
             RadioGroup radgroup = (RadioGroup) view.findViewById(R.id.radgroup);
 
-            
+            ToggleButton tog = (ToggleButton) view.findViewById(R.id.soundtog);
+
+            tog.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+                public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                    if (isChecked) {
+                        // The toggle is enabled
+                        prefs.setSound(true);
+
+                    } else {
+                        // The toggle is disabled
+                        prefs.setSound(false);
+
+                    }
+                }
+            });
+
+
+
+            radgroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+
+                    switch (i)
+                    {
+                        case R.id.blue:
+                            prefs.setColor("blue");
+                            viewpage.setBackgroundColor(getResources().getColor(R.color.blue));
+                            Toast.makeText(ProjectActivity.getAppContext(), "Blue", Toast.LENGTH_SHORT).show();
+                            break;
+                        case R.id.green:
+                            prefs.setColor("green");
+                            viewpage.setBackgroundColor(getResources().getColor(R.color.green));
+                            Toast.makeText(ProjectActivity.getAppContext(), "Green", Toast.LENGTH_SHORT).show();
+                            break;
+                        case R.id.white:
+                            prefs.setColor("white");
+                            viewpage.setBackgroundColor(getResources().getColor(R.color.white));
+                            Toast.makeText(ProjectActivity.getAppContext(), "White", Toast.LENGTH_SHORT).show();
+                            break;
+                        case R.id.red:
+                            prefs.setColor("red");
+                            viewpage.setBackgroundColor(getResources().getColor(R.color.red));
+                            Toast.makeText(ProjectActivity.getAppContext(), "Red", Toast.LENGTH_SHORT).show();
+                            break;
+                    }
+
+
+                }
+            });
+            return view;
+
+
+
+
+
 
         }
 
