@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "outputFile": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -1054,7 +1054,7 @@
                     "endOffset": 4821
                 },
                 "from": {
-                    "file": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\src\\main\\res\\values\\colors.xml",
+                    "file": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -1073,7 +1073,7 @@
                     "endOffset": 4861
                 },
                 "from": {
-                    "file": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\src\\main\\res\\values\\colors.xml",
+                    "file": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -1092,7 +1092,7 @@
                     "endOffset": 4899
                 },
                 "from": {
-                    "file": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\src\\main\\res\\values\\colors.xml",
+                    "file": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -1111,7 +1111,7 @@
                     "endOffset": 4943
                 },
                 "from": {
-                    "file": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\src\\main\\res\\values\\colors.xml",
+                    "file": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -1130,7 +1130,7 @@
                     "endOffset": 4983
                 },
                 "from": {
-                    "file": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\src\\main\\res\\values\\colors.xml",
+                    "file": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -1491,7 +1491,7 @@
                     "endOffset": 6437
                 },
                 "from": {
-                    "file": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\src\\main\\res\\values\\colors.xml",
+                    "file": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -1510,7 +1510,7 @@
                     "endOffset": 6484
                 },
                 "from": {
-                    "file": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\src\\main\\res\\values\\colors.xml",
+                    "file": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -1529,7 +1529,7 @@
                     "endOffset": 6535
                 },
                 "from": {
-                    "file": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\src\\main\\res\\values\\colors.xml",
+                    "file": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\src\\main\\res\\values\\colors.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -5063,7 +5063,7 @@
                     "endOffset": 44077
                 },
                 "from": {
-                    "file": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\src\\main\\res\\values\\strings.xml",
+                    "file": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\src\\main\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -5197,7 +5197,7 @@
                     "endOffset": 44872
                 },
                 "from": {
-                    "file": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\src\\main\\res\\values\\styles.xml",
+                    "file": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,

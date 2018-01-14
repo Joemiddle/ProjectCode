@@ -1,42 +1,42 @@
 [
     {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
-        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_slide_in_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
-        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_slide_in_top.xml"
-    },
-    {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
-        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_slide_out_top.xml"
-    },
-    {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
-        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_fade_out.xml"
-    },
-    {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
-        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_popup_enter.xml"
-    },
-    {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
-        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_fade_in.xml"
-    },
-    {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
-        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_slide_out_bottom.xml"
-    },
-    {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
         "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
         "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\anim\\abc_slide_in_top.xml"
     }
 ]

@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             }
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // Get Post object and use the values to update the UI
-                Tutorial1 tutorial1 = dataSnapshot.getValue(Tutorial.class);
+               // Tutorial1 tutorial1 = dataSnapshot.getValue(Tutorial.class);
                 // ...
             }
 

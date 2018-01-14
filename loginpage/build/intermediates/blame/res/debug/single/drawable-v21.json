@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
-        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
-        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\drawable-v21\\notification_action_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
         "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Users\\dngs0075\\Desktop\\ProjectCode-Seans-Branch\\ProjectCode-Seans-Branch\\MyApplication7\\loginpage\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
-        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\dngs0075\\Desktop\\My Project\\ProjectCode\\loginpage\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\dngs0075\\.android\\build-cache\\0e4beb9331424f5871bb0d63c6a2fef5f3d7c039\\output\\res\\drawable-v21\\notification_action_background.xml"
     }
 ]
