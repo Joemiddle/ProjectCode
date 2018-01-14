@@ -205,11 +205,41 @@ public class FragmentHandler extends Fragment {
             view = inflater.inflate(R.layout.settings, container, false);
             RadioGroup radgroup = (RadioGroup) view.findViewById(R.id.radgroup);
 
+            radgroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+                @Override
+                public void onCheckedChanged(RadioGroup radioGroup, @IdRes int i) {
+
+                    switch (i)
+                    {
+                        case R.id.blue:
+                            prefs.setColor("blue");
+                            viewpage.setBackgroundColor(getResources().getColor(R.color.blue));
+                            Toast.makeText(ProjectActivity.getAppContext(), "Blue", Toast.LENGTH_SHORT).show();
+                            break;
+                        case R.id.green:
+                            prefs.setColor("green");
+                            viewpage.setBackgroundColor(getResources().getColor(R.color.green));
+                            Toast.makeText(ProjectActivity.getAppContext(), "Green", Toast.LENGTH_SHORT).show();
+                            break;
+                        case R.id.white:
+                            prefs.setColor("white");
+                            viewpage.setBackgroundColor(getResources().getColor(R.color.white));
+                            Toast.makeText(ProjectActivity.getAppContext(), "White", Toast.LENGTH_SHORT).show();
+                            break;
+                        case R.id.red:
+                            prefs.setColor("red");
+                            viewpage.setBackgroundColor(getResources().getColor(R.color.red));
+                            Toast.makeText(ProjectActivity.getAppContext(), "Red", Toast.LENGTH_SHORT).show();
+                            break;
+                    }
+
+
+                }
+            });
+
+
             ToggleButton tog = (ToggleButton) view.findViewById(R.id.soundtog);
-
             tog.setChecked(prefs.checkSound());
-
-
             tog.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
                 public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                     if (isChecked) {

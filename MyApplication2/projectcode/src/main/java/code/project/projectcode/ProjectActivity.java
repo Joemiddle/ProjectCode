@@ -55,11 +55,8 @@ public class ProjectActivity extends AppCompatActivity {
         switch(item.getItemId())
         {
             case R.id.About:
-
-
                 Toast.makeText(ProjectActivity.getAppContext(), "Created by Team Panda 2017-2018", Toast.LENGTH_SHORT).show();
                 break;
-
         }
         return super.onOptionsItemSelected(item);
     }
@@ -85,7 +82,6 @@ public class ProjectActivity extends AppCompatActivity {
         }
         @Override
         public CharSequence getPageTitle(int position) {
-
            if(position == 0)
                return "Morse";
            else if(position == 2)
