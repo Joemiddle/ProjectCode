@@ -1,1 +1,1 @@
-include ':projectcode'
+include ':projectcode', ':loginpage'
