@@ -1,6 +1,10 @@
 package code.project.projectcode;
 
-
+/*
+Createed By Andrew McGuire
+TEAM PANADA
+PROJECT CODE
+ */
 import android.media.MediaPlayer;
 import android.provider.MediaStore;
 import android.util.Log;
@@ -8,9 +12,6 @@ import android.util.Log;
 import java.util.ArrayList;
 
 
-/**
- * Created by N01121995 on 12/6/2017.
- */
 
 public class MorseToSound {
 
@@ -37,7 +38,7 @@ public class MorseToSound {
        public void onCompletion(MediaPlayer mp){
 
            try {
-               wait(1);
+               wait(500);
            } catch (Exception e) {
                e.printStackTrace();
            }

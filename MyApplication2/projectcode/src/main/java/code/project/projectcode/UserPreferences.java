@@ -4,29 +4,33 @@ import android.content.SharedPreferences;
 import android.preference.Preference;
 import android.preference.PreferenceManager;
 
-/**
- * Created by Andrew on 10/12/2017.
+/*
+Createed By Andrew McGuire
+TEAM PANADA
+PROJECT CODE
  */
 
 public class UserPreferences {
 
     private boolean french;
     private boolean sound;
+    private String color;
 
      public UserPreferences()
     {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ProjectActivity.getAppContext());
-        french = prefs.getBoolean("French",false);
         sound = prefs.getBoolean("Sound",true);
+        color = prefs.getString("Color","white");
+
     }
 
-    public void setFrench(boolean fre)
+    public void setColor(String newcolor)
     {
         SharedPreferences prefs  = PreferenceManager.getDefaultSharedPreferences(ProjectActivity.getAppContext());
         SharedPreferences.Editor edit = prefs.edit();
-        edit.putBoolean("French",fre);
+        edit.putString("Color",newcolor);
         edit.apply();
-        this.french = fre;
+        this.color = newcolor;
     }
 
     public void setSound(boolean vol)
@@ -42,10 +46,7 @@ public class UserPreferences {
     {
         return sound;
     }
-    public boolean checkFrench()
-    {
-        return french;
-    }
+    public String checkColor(){return color;}
 
 
 }

@@ -1,13 +1,12 @@
 package code.project.projectcode;
 
-/**
- * Created by Andrew McGuire on 02/10/2017.
-
+/*
+Createed By Andrew McGuire
+TEAM PANADA
+PROJECT CODE
  */
 
 public class TextToMorse {
-
-
 
     public static String textToMorse(String morse)
     {
@@ -35,7 +34,6 @@ public class TextToMorse {
             }
             message += letter + " ";
         }
-        System.out.printf("Message: %s\n", message);
 
         return message;
     }

@@ -1,6 +1,9 @@
 package code.project.projectcode;
-//Created by Andrew McGuire on 02/10/2017.
-
+/*
+Createed By Andrew McGuire
+TEAM PANADA
+PROJECT CODE
+ */
 import android.content.Context;
 import android.content.Intent;
 import android.support.design.widget.TabLayout;
@@ -21,6 +24,7 @@ public class ProjectActivity extends AppCompatActivity {
 
     private static Context context;
     FragmentPagerAdapter adapterViewPager;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +51,16 @@ public class ProjectActivity extends AppCompatActivity {
         return true;
     }
 
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch(item.getItemId())
+        {
+            case R.id.About:
+                Toast.makeText(ProjectActivity.getAppContext(), "Created by Team Panda 2017-2018", Toast.LENGTH_SHORT).show();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
     // Returning the Context so that it is accessed by other classes
     public static Context getAppContext()
     {
@@ -54,7 +68,7 @@ public class ProjectActivity extends AppCompatActivity {
     }
 
     public class SampleFragmentPagerAdapter extends FragmentPagerAdapter {
-        final int PAGE_COUNT = 2;
+        final int PAGE_COUNT = 3;
         private Context context;
 
         public SampleFragmentPagerAdapter(FragmentManager fm, Context context) {
@@ -68,9 +82,10 @@ public class ProjectActivity extends AppCompatActivity {
         }
         @Override
         public CharSequence getPageTitle(int position) {
-
            if(position == 0)
                return "Morse";
+           else if(position == 2)
+               return "Settings";
             else return "Text";
         }
         @Override
