@@ -59,9 +59,6 @@ public class FragmentHandler extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPage = getArguments().getInt(ARG_PAGE);
-
-
-
     }
 
 
@@ -232,11 +229,8 @@ public class FragmentHandler extends Fragment {
                             Toast.makeText(ProjectActivity.getAppContext(), "Red", Toast.LENGTH_SHORT).show();
                             break;
                     }
-
-
                 }
             });
-
 
             ToggleButton tog = (ToggleButton) view.findViewById(R.id.soundtog);
             tog.setChecked(prefs.checkSound());
@@ -249,43 +243,11 @@ public class FragmentHandler extends Fragment {
                     } else {
                         // The toggle is disabled
                         prefs.setSound(false);
-
                     }
                 }
             });
         }
-
-        // going to try do access database here.
-        else if(mPage == 4)
-        {
-            view = null;
-            DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
-            FirebaseAuth mAuth = FirebaseAuth.getInstance();
-//            onAuthSuccess(mAuth.getCurrentUser());
-//
-//            view = null;
-//            if (!validateForm()) {
-//                return null;
-//            }
-
-//
-//            String email = mEmailField.getText().toString();
-//            String password = mPasswordField.getText().toString();
-
-//            mAuth.signInWithEmailAndPassword(email, password)
-//                    .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-//                        @Override
-//                        public void onComplete(@NonNull Task<AuthResult> task) {
-//
-//                            if (task.isSuccessful()) {
-//                                task.getResult().getUser();
-//                            } else {
-//
-//                            }
-//                        }
-//                    });
-        }
-
+        
 
         else {
 
