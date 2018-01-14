@@ -134,11 +134,11 @@ public class Tutorial extends AppCompatActivity {
         public CharSequence getPageTitle(int position) {
             switch (position) {
                 case 0:
-                    return "Letters";
+                    return getString(R.string.letters);
                 case 1:
-                    return "Numbers";
+                    return getString(R.string.numbers);
                 case 2:
-                    return "Quiz";
+                    return getString(R.string.quizstring);
             }
             return null;
         }
