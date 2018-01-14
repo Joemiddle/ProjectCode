@@ -247,7 +247,7 @@ public class FragmentHandler extends Fragment {
                 }
             });
         }
-        
+
 
         else {
 
