@@ -1,5 +1,6 @@
 package com.example.tutorials;
 
+import android.content.Context;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -42,11 +43,13 @@ public class Tutorial extends AppCompatActivity {
      * The {@link ViewPager} that will host the section contents.
      */
     private ViewPager mViewPager;
+    private static Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutorial);
+        Tutorial.context = getApplicationContext();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -72,6 +75,10 @@ public class Tutorial extends AppCompatActivity {
             }
         });
 
+    }
+    public static Context getAppContext()
+    {
+        return Tutorial.context;
     }
 
 
