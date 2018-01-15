@@ -38,7 +38,7 @@ public class Tab3Quiz extends Fragment{
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.tab3_quiz, container, false);
 
-        question = (TextView) rootView.findViewById(R.id.question)
+        question = (TextView) rootView.findViewById(R.id.question);
 
 
         return rootView;
