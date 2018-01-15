@@ -9,10 +9,18 @@ PROJECT CODE
 
 import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+
+import com.google.firebase.database.DatabaseReference;
+
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
@@ -21,7 +29,11 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 
 
+
 public class Tab3Quiz extends Fragment{
+
+
+
 
     Questions question;
     int questionnum;
@@ -30,9 +42,14 @@ public class Tab3Quiz extends Fragment{
     RadioButton ans3;
     RadioButton ans4;
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
+        question = (TextView) rootView.findViewById(R.id.question);
+
         // Handling View
         final View rootView = inflater.inflate(R.layout.tab3_quiz, container, false);
 
@@ -131,6 +148,7 @@ public class Tab3Quiz extends Fragment{
                 }
             }*/
 //        });
+
 
 
         return rootView;
