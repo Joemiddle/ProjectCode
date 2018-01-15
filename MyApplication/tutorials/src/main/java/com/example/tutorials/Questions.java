@@ -17,6 +17,8 @@ public class Questions {
 
     public Questions() {
         //empty constructor
+
+
     }
 
     public Questions (String Question, String PA1, String PA2, String PA3, String PA4, String Answer){
@@ -31,22 +33,42 @@ public class Questions {
     public String getQuestion(){
         return Question;
     }
+    {
+        PA1 = "This is a test";
+    }
+
 
     public String getPA1(){
         return PA1;
+    }
+    {
+        PA1 = "This is a test";
     }
 
     public String getPA2(){
         return PA2;
     }
 
+    {
+        PA2 = "This is a test";
+    }
+
     public String getPA3(){
         return PA3;
+    }
+
+    {
+        PA3 = "This is a test";
     }
 
     public String getPA4(){
         return PA4;
     }
+    {
+        PA4 = "This is a test";
+    }
+
+
     public String getAnswer(){
         return Answer;
     }
