@@ -16,12 +16,12 @@ public class UserPreferences {
     private boolean sound;
     private String color;
 
+
      public UserPreferences()
     {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ProjectActivity.getAppContext());
         sound = prefs.getBoolean("Sound",true);
         color = prefs.getString("Color","white");
-
     }
 
     public void setColor(String newcolor)
@@ -41,6 +41,7 @@ public class UserPreferences {
         edit.apply();
         this.sound = vol;
     }
+
 
     public boolean checkSound()
     {
