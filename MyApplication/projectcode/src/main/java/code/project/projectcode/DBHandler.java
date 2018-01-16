@@ -66,11 +66,13 @@ public DBHandler() {
 
     Tutorial1 = new JSONObject();
     try {
-        Tutorial1.put("Question", "2");
-        Tutorial1.put("PA1", "NAME OF STUDENT2");
-        Tutorial1.put("PA2", "4rd");
-        Tutorial1.put("PA3", "scicence");
-        Tutorial1.put("PA4", "5/5/1993");
+        Tutorial1.put("Question", "How do you represent SOS?");
+        Tutorial1.put("PA1" , "...---...");
+        Tutorial1.put("PA2" , "---...---");
+        Tutorial1.put("PA3" ,"..----..-");
+        Tutorial1.put("PA4","--.-.---.");
+        Tutorial1.put("Answer", "...---...");
+
 
     } catch (JSONException e) {
         // TODO Auto-generated catch block
@@ -79,12 +81,12 @@ public DBHandler() {
 
     JSONObject Tutorial2 = new JSONObject();
     try {
-        Tutorial2.put("Question", "2");
-        Tutorial2.put("PA1", "NAME OF STUDENT2");
-        Tutorial2.put("PA2", "4rd");
-        Tutorial2.put("PA3", "scicence");
-        Tutorial2.put("PA4", "5/5/1993");
-
+        Tutorial2.put("Question", "How do you represent the letter R?");
+        Tutorial2.put("PA1", "-.");
+        Tutorial2.put("PA2", "--");
+        Tutorial2.put("PA3", '.-.");
+        Tutorial2.put("PA4", "--');
+        Tutorial2.put("Answer", ".-.");
     } catch (JSONException e) {
         // TODO Auto-generated catch block
         e.printStackTrace();
@@ -92,23 +94,24 @@ public DBHandler() {
 
     JSONObject Tutorial3 = new JSONObject();
     try {
-        Tutorial3.put("Question", "2");
-        Tutorial3.put("PA1", "NAME OF STUDENT2");
-        Tutorial3.put("PA2", "4rd");
-        Tutorial3.put("PA3", "scicence");
-        Tutorial3.put("PA4", "5/5/1993");
-
+        Tutorial3.put("Question", "How do you represent the letter A?");
+        Tutorial3.put("PA1", "-.");
+        Tutorial3.put("PA2", ".-");
+        Tutorial3.put("PA3", "--");
+        Tutorial3.put("PA4", "--");
+        Tutorial3.put("Answer", ".-");
     } catch (JSONException e) {
         // TODO Auto-generated catch block
         e.printStackTrace();
     }
     JSONObject Tutorial4 = new JSONObject();
     try {
-        Tutorial4.put("Question", "2");
-        Tutorial4.put("PA1", "NAME OF STUDENT2");
-        Tutorial4.put("PA2", "4rd");
-        Tutorial4.put("PA3", "scicence");
-        Tutorial4.put("PA4", "SoemthingElse");
+        Tutorial4.put("Question", "How do you represent #1?");
+        Tutorial4.put("PA1", "..---");
+        Tutorial4.put("PA2", "--...");
+        Tutorial4.put("PA3", ".----");
+        Tutorial4.put("PA4", "-----");
+        Tutorial4.put("Answer", ".----);
 
     } catch (JSONException e) {
         // TODO Auto-generated catch block
@@ -116,11 +119,12 @@ public DBHandler() {
     }
     JSONObject Tutorial5 = new JSONObject();
     try {
-        Tutorial5.put("Question", "2");
-        Tutorial5.put("PA1", "NAME OF STUDENT2");
-        Tutorial5.put("PA2", "4rd");
-        Tutorial5.put("PA3", "scicence");
-        Tutorial5.put("PA4", "5/5/1993");
+        Tutorial5.put("Question", "How do you represent #6?");
+        Tutorial5.put("PA1", "...--");
+        Tutorial5.put("PA2", "-....");
+        Tutorial5.put("PA3", ".----");
+        Tutorial5.put("PA4", "----.");
+        Tutorial5.put("Answer", "-....");
 
     } catch (JSONException e) {
         // TODO Auto-generated catch block
@@ -128,66 +132,7 @@ public DBHandler() {
     }
 
 
-    JSONArray jsonArray = new JSONArray();
-
-    jsonArray.put(Tutorial1);
-    jsonArray.put(Tutorial2);
-
-    JSONObject studentsObj = new JSONObject();
-    studentsObj.put("Students", jsonArray);
-
-
-
-    String jsonStr = studentsObj.toString();
-
-    System.out.println("jsonString: "+jsonStr);
-
 
 }
 
-JSONArray quizes = new JSONArray()
-    {
-        "Tutorials" : {
-        "1" : {
-        "Answer" : "...---...",
-        "PA1" : "...---...",
-        "PA2" : "---...---",
-        "PA3" : "..----..-",
-        "PA4" : "--.-.---.",
-        "Question" : "How do you represent SOS?"
-        },
-        "2" : {
-        "Answer" : ".-.",
-        "PA1" : "-.",
-        "PA2" : "--",
-        "PA3" : ".-.",
-        "PA4" : "--",
-        "Question" : "How do you represent the letter R?"
-        },
-        "3" : {
-        "Answer" : ".-",
-        "PA1" : "-.",
-        "PA2" : "--",
-        "PA3" : ".-",
-        "PA4" : "--",
-        "Question" : "How do you represent the letter A?"
-        },
-        "4" : {
-        "Answer" : ".----",
-        "PA1" : "..---",
-        "PA2" : "--...",
-        "PA3" : ".----",
-        "PA4" : "-----",
-        "Question" : "How do you represent the Number 1?"
-        },
-        "5" : {
-        "Answer" : "-....",
-        "PA1" : "...--",
-        "PA2" : "-....",
-        "PA3" : ".----",
-        "PA4" : "----.",
-        "Question" : "How do you represent the Number 6?"
-        }
-        }
-        }
 */
