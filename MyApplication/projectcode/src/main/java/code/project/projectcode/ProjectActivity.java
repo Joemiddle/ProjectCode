@@ -57,6 +57,11 @@ public class ProjectActivity extends AppCompatActivity {
             case R.id.About:
                 Toast.makeText(ProjectActivity.getAppContext(), "Created by Team Panda 2017-2018", Toast.LENGTH_SHORT).show();
                 break;
+
+            case R.id.tutorial:
+                Intent tutorialintent = new Intent(ProjectActivity.this,Tutorial.class);
+                startActivity(tutorialintent);
+                break;
         }
         return super.onOptionsItemSelected(item);
     }
