@@ -17,9 +17,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
+
+        <activity android:name="code.project.projectcode.Tutorial"
+            android:screenOrientation="portrait">
+        </activity>
+
     </application>
 
 </manifest>

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\User\Documents\Github Desktop\ProjectCode\MyApplication\app\app.iml" filepath="C:\Users\User\Documents\Github Desktop\ProjectCode\MyApplication\app\app.iml" />
       <module fileurl="file://C:\Users\dngs0075\Desktop\Project Code\ProjectCode\MyApplication\app\app.iml" filepath="C:\Users\dngs0075\Desktop\Project Code\ProjectCode\MyApplication\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/projectcode/projectcode.iml" filepath="$PROJECT_DIR$/projectcode/projectcode.iml" />
       <module fileurl="file://C:\Users\dngs0075\Desktop\Project Code\ProjectCode\MyApplication\projectcode\projectcode.iml" filepath="C:\Users\dngs0075\Desktop\Project Code\ProjectCode\MyApplication\projectcode\projectcode.iml" />
-      <module fileurl="file://$PROJECT_DIR$/tutorials/tutorials.iml" filepath="$PROJECT_DIR$/tutorials/tutorials.iml" />
       <module fileurl="file://C:\Users\dngs0075\Desktop\Project Code\ProjectCode\MyApplication\tutorials\tutorials.iml" filepath="C:\Users\dngs0075\Desktop\Project Code\ProjectCode\MyApplication\tutorials\tutorials.iml" />
     </modules>
   </component>
