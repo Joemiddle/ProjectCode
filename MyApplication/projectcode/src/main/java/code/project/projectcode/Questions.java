@@ -21,7 +21,7 @@ public class Questions {
 
 
 
-    public Questions() {
+    public Questions(String s, String s1, String s2, String s3, String s4) {
 
 
 

@@ -17,6 +17,9 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 import android.widget.ToggleButton;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 
 public class Tab3Quiz extends Fragment{
@@ -46,7 +49,7 @@ public class Tab3Quiz extends Fragment{
 
 
         // getNextQuestion();
-        question = new Questions("How's the best?","Dude","Other","Gal","Friend","Dude");
+        question = new Questions("","","","","", "");
         // get question/possible answer from db
 
         ans1.setText(question.getPA1());
@@ -143,12 +146,14 @@ public class Tab3Quiz extends Fragment{
     public void getNextQuestions()
     {
         // Get new questions from DB Call DB
-        // DBHandler.getQuestion(questionnum);
 
+        DBHandler handle = new DBHandler();
+        //handle.Tutorial1;
         // public Questions getQuestion(int qu1estionnum){ }
 
-        Questions newquest = new Questions(); // make it equal to the information pulled from the db
-        question = newquest;
+       // Questions newquest = new Questions(); // make it equal to the information pulled from the db
+        //question = newquest;
+        question.setQuestion(question.getQuestion());
         ans1.setText(question.getPA1());
         ans2.setText(question.getPA2());
         ans3.setText(question.getPA3());
