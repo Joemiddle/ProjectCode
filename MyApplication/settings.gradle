@@ -1,1 +1,1 @@
-include ':projectcode'
+include ':projectcode', ':Calculator'
