@@ -195,8 +195,8 @@ public class FragmentHandler extends Fragment {
                             sound.morseToSound(message);
                         }
                     }
-                }
-            });
+        }
+    });
 
         }
 

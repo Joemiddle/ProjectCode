@@ -8,7 +8,6 @@
         android:layout_height="70sp"
         android:id="@+id/translation"
         android:textSize="30sp"
-        android:background="@drawable/border"
         />
 
     <LinearLayout
@@ -64,7 +63,6 @@
         android:id="@+id/message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border"
         android:textSize="40sp" />
 
 </LinearLayout>

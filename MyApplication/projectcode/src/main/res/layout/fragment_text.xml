@@ -9,8 +9,6 @@
         android:layout_width="fill_parent"
         android:layout_height="70sp"
         android:textSize="30sp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/border"
          />
 
 
@@ -20,7 +18,6 @@
         android:layout_height="wrap_content"
         android:text="@string/send"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
          />
 
 
@@ -28,9 +25,8 @@
         android:id="@+id/message"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Message"
+        android:hint="@string/hint"
         android:textSize="30sp"
-        android:layout_marginTop="50dp"
         />
 
 
