@@ -5,8 +5,10 @@ import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
-/**
- * Created by User on 15/01/2018.
+/*
+Createed By Andrew McGuire
+TEAM PANADA
+PROJECT CODE
  */
 
 public class QuestionsTest {
