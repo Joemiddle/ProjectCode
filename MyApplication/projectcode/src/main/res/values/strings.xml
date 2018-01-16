@@ -14,9 +14,9 @@
     <string name="backcolor">Background Color</string>
     <string name="soundtog">Sound</string>
     <string name="hint">Enter Message</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
-    <string name="tab_text_3">Tab 3</string>
+    <string name="tab_text_1">Letters</string>
+    <string name="tab_text_2">Numbers</string>
+    <string name="tab_text_3">Quiz</string>
     <string name="action_settings">Settings</string>
     <string name="letters">Letters</string>
     <string name="numbers">Numbers</string>
