@@ -12,10 +12,11 @@ public class TextToMorse {
     {
         String s = morse.toLowerCase();
         String message = "";
-        String alphabet = "abcdefghijklmnopqrstuvwxyz .";
+        String alphabet = "abcdefghijklmnopqrstuvwxyz .1234567890";
         String[] morseAlphabet = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
                 "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-",
-                "...-", ".--", "-..-", "-.--", "--..", " ", ".-.-.-"};
+                "...-", ".--", "-..-", "-.--", "--..", " ", ".-.-.-",".-----","..---","...--","....-",".....",
+                "-....","--...","---..","----.","-----"};
 
         for (char alphabetLetter : s.toCharArray())
         {
