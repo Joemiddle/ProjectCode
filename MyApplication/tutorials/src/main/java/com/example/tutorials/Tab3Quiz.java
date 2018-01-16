@@ -19,7 +19,11 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import android.widget.Button;
 import android.widget.CompoundButton;
@@ -32,7 +36,7 @@ import android.widget.ToggleButton;
 
 public class Tab3Quiz extends Fragment{
 
-
+ public DatabaseReference  RefQuestion, RefAnswer, RefPA1, RefPA2, RefPA3, RefPA4;
 
 
     Questions question;
@@ -43,12 +47,11 @@ public class Tab3Quiz extends Fragment{
     RadioButton ans4;
 
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-
-        question = (TextView) rootView.findViewById(R.id.question);
 
         // Handling View
         final View rootView = inflater.inflate(R.layout.tab3_quiz, container, false);
@@ -167,12 +170,27 @@ public class Tab3Quiz extends Fragment{
 
         // public Questions getQuestion(int qu1estionnum){ }
 
-        Questions newquest = new Questions(); // make it equal to the information pulled from the db
+     /*   Questions newquest = new Questions(); // make it equal to the information pulled from the db
         question = newquest;
         ans1.setText(question.getPA1());
         ans2.setText(question.getPA2());
         ans3.setText(question.getPA3());
-        ans4.setText(question.getPA4());
+        ans4.setText(question.getPA4());*/
+
+     RefQuestion = new DatabaseReference("https://projectcode-c86ed.firebaseio.com/Tutorials/"+ questionnum +"/Question");
+     RefQuestion.addValueEventListener(new ValueEventListener() {
+         @Override
+         public void onDataChange(DataSnapshot dataSnapshot) {
+             String choice = dataSnapshot.getValue();
+         }
+
+         @Override
+         public void onCancelled(DatabaseError databaseError) {
+
+         }
+     })
+
+
     }
 
 }
