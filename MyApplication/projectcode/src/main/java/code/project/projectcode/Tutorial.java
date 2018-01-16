@@ -102,7 +102,7 @@ public class Tutorial extends AppCompatActivity {
             return true;
         }
         if (id == R.id.translator){
-            Intent projectintent = new Intent(this,Tutorial.class);
+            Intent projectintent = new Intent(Tutorial.this,Tutorial.class);
             startActivity(projectintent);
         }
 
