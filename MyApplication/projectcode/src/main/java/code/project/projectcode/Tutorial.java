@@ -20,6 +20,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /*
@@ -67,15 +68,6 @@ public class Tutorial extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-
     }
     public static Context getAppContext()
     {
@@ -98,8 +90,8 @@ public class Tutorial extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.aboutT) {
+            Toast.makeText(ProjectActivity.getAppContext(), "Created by Team Panda 2017-2018", Toast.LENGTH_SHORT).show();
         }
         if (id == R.id.translator){
             Intent projectintent = new Intent(Tutorial.this,ProjectActivity.class);

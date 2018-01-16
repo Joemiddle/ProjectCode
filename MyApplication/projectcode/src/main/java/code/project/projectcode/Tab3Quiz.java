@@ -15,8 +15,11 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
+
+import org.w3c.dom.Text;
 
 
 public class Tab3Quiz extends Fragment{
@@ -46,9 +49,11 @@ public class Tab3Quiz extends Fragment{
 
 
         // getNextQuestion();
-        question = new Questions("How's the best?","Dude","Other","Gal","Friend","Dude");
+        question = new Questions("What is SOS in Morse?","..- .. .-","... .-- ...","... --- ...",".... .- -.- ..","... --- ...");
         // get question/possible answer from db
 
+        TextView questionView = (TextView) rootView.findViewById(R.id.question);
+        questionView.setText(question.getQuestion());
         ans1.setText(question.getPA1());
         ans2.setText(question.getPA2());
         ans3.setText(question.getPA3());
