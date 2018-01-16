@@ -1,4 +1,4 @@
-/*package code.project.projectcode;
+package code.project.projectcode;
 
 //import com.firebase.client.Firebase;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -20,20 +20,20 @@ import org.json.JSONObject;
 Created By Sean Danagher
 TEAM PANADA
 PROJECT CODE
-/
+*/
 
 import com.google.firebase.database.DataSnapshot;
 
 public class DBHandler {
+
+
+
+    //DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
+
+
+    //public DBHandler() {
+
 /*
-
-
-    DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
-
-
-    public DBHandler() {
-
-
 
 
         }
@@ -55,7 +55,7 @@ public class DBHandler {
 
 }
 }
-/
+*/
 public JSONObject Tutorial1;
 public JSONObject Tutorial2;
 public JSONObject Tutorial3;
@@ -67,10 +67,10 @@ public DBHandler() {
     Tutorial1 = new JSONObject();
     try {
         Tutorial1.put("Question", "How do you represent SOS?");
-        Tutorial1.put("PA1" , "...---...");
-        Tutorial1.put("PA2" , "---...---");
-        Tutorial1.put("PA3" ,"..----..-");
-        Tutorial1.put("PA4","--.-.---.");
+        Tutorial1.put("PA1", "...---...");
+        Tutorial1.put("PA2", "---...---");
+        Tutorial1.put("PA3", "..----..-");
+        Tutorial1.put("PA4", "--.-.---.");
         Tutorial1.put("Answer", "...---...");
 
 
@@ -84,8 +84,8 @@ public DBHandler() {
         Tutorial2.put("Question", "How do you represent the letter R?");
         Tutorial2.put("PA1", "-.");
         Tutorial2.put("PA2", "--");
-        Tutorial2.put("PA3", '.-.");
-        Tutorial2.put("PA4", "--');
+        Tutorial2.put("PA3", ".-.");
+        Tutorial2.put("PA4", "--");
         Tutorial2.put("Answer", ".-.");
     } catch (JSONException e) {
         // TODO Auto-generated catch block
@@ -111,7 +111,7 @@ public DBHandler() {
         Tutorial4.put("PA2", "--...");
         Tutorial4.put("PA3", ".----");
         Tutorial4.put("PA4", "-----");
-        Tutorial4.put("Answer", ".----);
+        Tutorial4.put("Answer", ".----");
 
     } catch (JSONException e) {
         // TODO Auto-generated catch block
@@ -132,7 +132,6 @@ public DBHandler() {
     }
 
 
-
+}
 }
 
-*/
