@@ -1,1 +1,1 @@
-include ':app', ':projectcode', ':tutorials'
+include ':projectcode'
