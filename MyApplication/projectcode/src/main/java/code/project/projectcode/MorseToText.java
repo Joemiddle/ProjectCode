@@ -15,11 +15,12 @@ public class MorseToText {
         String message = "";
 
         // sample alphabet string
-        String alphabet = "abcdefghijklmnopqrstuvwxyz .";
+        String alphabet = "abcdefghijklmnopqrstuvwxyz .1234567890";
         String[] morseAlphabet = {".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....",
                 "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-",
-                "...-", ".--", "-..-", "-.--", "--..", " ", ".-.-.-"};
-
+                "...-", ".--", "-..-", "-.--", "--..", " ", ".-.-.-",".-----","..---","...--","....-",".....",
+                "-....","--...","---..","----.","-----"};
+        
         // separate on string letters
         String[] letters = s.split(" ");
 
